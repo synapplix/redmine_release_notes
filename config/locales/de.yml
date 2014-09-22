@@ -6,27 +6,27 @@ de:
     release_note: "Release Note"
     release_note_plural: "Release Notes"
 
-    mark_complete: "Sind die Release Notes vollständig angegeben?"
+    mark_complete: "Ist der Release Note Text für das Ticket vollständig?"
     cant_set_done_if_no_release_notes: "Der Status kann nicht auf %{value} gesetzt werden, wenn die Release Notes nicht angegeben sind"
 
     generate: "Release Notes erstellen"
     generate_title: "Release Notes für die Version %{version} verwalten"
-    show_closed_versions: "Abgeeschlossene Versionen anzeigen"
+    show_closed_versions: "Abgeschlossene Versionen anzeigen"
 
     progress: "Release Notes Fortschritt"
-    x_issues_in_total: "%{count} Tickets gesamt"
-    x_requiring_release_notes: "%{count} benötigen Release Notes"
-    x_done: "%{count} erledigt"
-    x_done_empty: "%{count} ohne Release Notes"
-    x_to_go: "%{count} noch offen"
-    x_not_required: "%{count} nicht erforderlich"
-    x_not_required_cf_none:  "%{count} : eingestellt, wie nicht erforderlich"
-    x_not_required_cf_not_defined:  "%{count} : Tracker  nicht verwenden Release Notes"
-    x_invalid: "%{count} : ungültig '%{cf_name}'"
+    x_issues_in_total: "%{count} Tickets insgesamt"
+    x_requiring_release_notes: "%{count} Tickets benötigen Release Notes"
+    x_done: "davon sind %{count} Release Notes erledigt:"
+    x_done_empty: "davon sind %{count} noch ohne Release Notes:"
+    x_to_go: "Folgende offene Tickets (%{count}) benötigen noch Release Notes:"
+    x_not_required: "%{count} Tickets benötigen keine Release"
+    x_not_required_cf_none:  "%{count} Tickets haben den Release Notes Status 'nicht notwendig'"
+    x_not_required_cf_not_defined:  "%{count} Tickets haben keinen Release Notes-Status im Dropdown angegeben"
+    x_invalid: "Es sind %{count} ungültige Release Notes '%{cf_name}' vorhanden"
     x_invalid_nil:  "%{count} : leer oder nicht gesetzt"
     x_invalid_nil_all:  "alle leer oder nicht gesetzt"
     none_blank:  "Keine Probleme haben '%{cf_name}' als leere oder ungültige"
-    all_done: "Alle erledigt!"
+    all_done: "Alle Release Notes sind erstellt!"
     percent_done: "%{count}% erledigt"
     not_started: "Noch nicht begonnen"
 
@@ -41,8 +41,8 @@ de:
       other: "Es gibt %{count} Fragen, die nicht über einen gültigen Wert für die Release Notes benutzerdefiniertes Feld"
 
     some_issues_done_with_no_release_notes:
-      one: "Es gibt 1 Ausgabe, die als 'erledigt' gekennzeichnet wird, aber noch keine Release Notes"
-      other: "Es gibt %{count} Fragen, die als 'erledigt' gekennzeichnet sind, aber haben noch keine Release Notes"
+      one: "Es gibt 1 Ticket, das als 'erledigt' gekennzeichnet ist, aber noch keine Release Notes besitzt"
+      other: "Es gibt %{count} Tickets, die als 'erledigt' gekennzeichnet sind, aber noch keine Release Notes haben"
 
     raw: "Quelltext anzeigen"
     download: "Download"
@@ -50,13 +50,13 @@ de:
     config:
       issue_custom_field:
         name: "Benutzerdefiniertes Ticketfeld für die Release Notes"
-        info: "Dieses Feld wird im Ticket verwendet um den Fertigstellungsstatus der Release Notes abzubilden. Für die Tickets muss ein benutzerdefiniertes  Feld vom Typ Liste konfigruiert werden, welches drei Werte hat. [nicht notwendig,nicht erstellt,vollständig]"
+        info: "Dieses Feld wird im Ticket verwendet um den Fertigstellungsstatus der Release Notes abzubilden. Für die Tickets muss ein benutzerdefiniertes  Feld vom Typ Liste konfigruiert werden, welches drei Werte hat. [nicht notwendig,notwendig,erledigt]"
       field_value_not_required:
         name: "Folgende Tickets benötigen keine Release Notes"
       field_value_todo:
         name: "Folgende Tickets haben noch keine Release Notes"
       field_value_done:
-        name: "Folgende Tickets haben gefüllte Release Notes"
+        name: "Folgende Tickets haben bereits erledigte Release Notes"
 
     formats:
       title: "Formate"
